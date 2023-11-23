@@ -1,0 +1,27 @@
+// import logo from './logo.svg';
+import React from 'react';
+// import { Route, Routes } from 'react-router-dom';
+import { Outlet, Link } from "react-router-dom";
+
+function MainComponent() {
+  return (
+    <div>
+      <p>메인페이지</p>
+      <p>
+      <Link to="/introduction">소개</Link>
+      </p>
+      <p>
+      <Link to="/profile">약력</Link>
+      </p>
+      <p>
+      <Link to="/techstack">기술 스택</Link>
+      </p>
+      <p>
+      <Link to="/project">프로젝트</Link>
+      </p>
+      <Outlet />
+    </div>
+  );
+}
+
+export default MainComponent;
