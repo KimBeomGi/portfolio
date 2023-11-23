@@ -1,9 +1,12 @@
-// import logo from './logo.svg';
 import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux'
 import { Outlet, Link } from "react-router-dom";
+import { decrement, increment } from '../../redux/slices/main/mainSlice';
 
 function MainComponent() {
+  const count = useSelector((state) => state.mainSlice.value)
+  const dispatch = useDispatch()
+
   return (
     <div>
       <p>메인페이지</p>
@@ -19,6 +22,19 @@ function MainComponent() {
       <p>
       <Link to="/project">프로젝트</Link>
       </p>
+      <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
+          Increment
+        </button>
+        <span>{count}</span>
+        <button
+          aria-label="Decrement value"
+          onClick={() => dispatch(decrement())}
+        >
+          Decrement
+        </button>
       <Outlet />
     </div>
   );

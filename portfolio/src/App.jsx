@@ -16,7 +16,6 @@ function App() {
       <Route path='/profile' element={<ProfileComponent />} />
       <Route path='/techstack' element={<TechstackComponent />} />
       <Route path='/project' element={<ProjectComponent />} />
-      
     </Routes>
   );
 }
