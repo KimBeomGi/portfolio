@@ -7,19 +7,6 @@ function IntroductionComponent() {
   return (
     <div>
       <p>소개</p>
-      <p>
-      <Link to="/introduction">소개</Link>
-      </p>
-      <p>
-      <Link to="/profile">약력</Link>
-      </p>
-      <p>
-      <Link to="/techstack">기술 스택</Link>
-      </p>
-      <p>
-      <Link to="/project">프로젝트</Link>
-      </p>
-      <Outlet />
     </div>
   );
 }

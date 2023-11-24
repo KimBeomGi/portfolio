@@ -1,0 +1,67 @@
+.majorContainer {
+  width: 100%;
+  /* height: 100%; */
+  /* background: black; */
+}
+.subContainer {
+  margin: auto;
+  width: 95%;
+  /* height: 95%; */
+  background-color: skyblue;
+}
+
+/* 메인 컴포넌트 부분 */
+.mainTop {
+  display: flex;
+  flex-direction: row;
+  /* height: 50%;  */
+  width: 100%;
+  background: #b33c3c;
+}
+.mainTopLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a7ad37;
+}
+.mainTopLeftSub {
+  justify-content: center;
+  align-items: center;
+}
+.mainTopRigth {
+  width: 50%;
+  background: #0e4835;
+}
+.mainTopLeftText{
+  text-align: center;
+  color: #ffffff;
+  font-size: calc(30px + 1.5vmin);
+}
+.mainBottom {
+  display: flex;
+  flex-direction: row;
+  /* height: 50%;  */
+  width: 100%;
+  background: #5743a9;
+}
+.mainBottomLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background: #3757b7;
+}
+.mainBottomLeftSub {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.mainBottomLeftListText {
+  color: #ffffff;
+  font-size: calc(15px + 1vmin);
+  padding: calc(1vmin);
+}
+.mainBottomRigth {
+  width: 50%;
+  background: #7bc6ad;
+}

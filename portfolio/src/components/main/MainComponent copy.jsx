@@ -13,18 +13,24 @@ function MainComponent() {
     <div className='majorContainer'>
       {/* 메인 컴포넌트 전체 */}
       <div className='subContainer'>
-        <div class='row'>
-          <div class='col-md-6'>
+        {/* 상단 */}
+        <div className='mainTop'>
+          {/* 상단좌측 */}
+          <div className='mainTopLeft'>
             <div className='mainTopLeftSub'>
               <h1 className='mainTopLeftText'>느리더라도 결승점에 도착하는 거북이🐢</h1>
               <h1 className='mainTopLeftText'>김범기입니다.</h1>
             </div>
           </div>
-          <div class='col-md-6'>
-            <h1>테스트중2</h1>
-            <img src="../../../public/image/mainImage/a.png" alt="김범기 포트폴리오용"/>
+          {/* 상단우측 */}
+          <div className='mainTopRigth'>
+
           </div>
-          <div class='col-md-6'>
+        </div>
+        {/* 하단 */}
+        <div className='mainBottom'>
+          {/* 하단좌측 */}
+          <div className='mainBottomLeft'>
             <div className='mainBottomLeftSub'>
               <ul>
                 <li className='mainBottomLeftListText'>안되면 되게하라!의 신념으로 일하는 개발자 김범기입니다.</li>
@@ -35,8 +41,9 @@ function MainComponent() {
               </ul>
             </div>
           </div>
-          <div class='col-md-6'>
-            <h1>테스트중4</h1>
+          {/* 하단우측 */}
+          <div className='mainBottomRigth'>
+
           </div>
         </div>
       </div>

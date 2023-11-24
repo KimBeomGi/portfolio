@@ -1,8 +1,20 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: #00069A;
+}
+.NavContainer {
+  width: 100vw;
+  /* height: 20%; */
+  /* background: #00069A; */
+}
+.AppContainer {
+  width: 100vw;
+  /* height: calc(100vh - (30px + 1vmin) - (30px + 0.5vmin) - (30px + 1vmin)); */
+  /* background: #20d9d3; */
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
