@@ -1,5 +1,7 @@
 import React from 'react';
-import '../Major.css'
+import './Main.css'
+import portfolioMe1 from '../../image/mainImage/portfolioMe1.png';
+
 
 // import { useSelector, useDispatch } from 'react-redux'
 // import { Outlet, Link } from "react-router-dom";
@@ -14,17 +16,18 @@ function MainComponent() {
       {/* 메인 컴포넌트 전체 */}
       <div className='subContainer'>
         <div class='row'>
-          <div class='col-md-6'>
-            <div className='mainTopLeftSub'>
-              <h1 className='mainTopLeftText'>느리더라도 결승점에 도착하는 거북이🐢</h1>
-              <h1 className='mainTopLeftText'>김범기입니다.</h1>
+        <div class='col-md-8' style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <div className='mainTopLeft'>
+              <div className='mainTopLeftSub'>
+                <h1 className='mainTopLeftText'>느리더라도 결승점에 도착하는 거북이🐢</h1>
+                <h1 className='mainTopLeftText'>김범기입니다.</h1>
+              </div>
             </div>
           </div>
-          <div class='col-md-6'>
-            <h1>테스트중2</h1>
-            <img src="../../../public/image/mainImage/a.png" alt="김범기 포트폴리오용"/>
+          <div class='col-md-4' style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <img className='mainTopRigthImage' src={portfolioMe1} alt="main logo"/>
           </div>
-          <div class='col-md-6'>
+          <div class='col-md-8' style={{display:'flex', alignItems:'center'}}>
             <div className='mainBottomLeftSub'>
               <ul>
                 <li className='mainBottomLeftListText'>안되면 되게하라!의 신념으로 일하는 개발자 김범기입니다.</li>
@@ -35,8 +38,21 @@ function MainComponent() {
               </ul>
             </div>
           </div>
-          <div class='col-md-6'>
-            <h1>테스트중4</h1>
+          <div class='col-md-4' style={{display: 'flex', flexDirection: 'column', justifyContent:'center'}}>
+            <div>
+              <div className='account'>
+                <h3 className='mainBottomRigthH3Text'>Email</h3>
+                <p className='mainBottomRigthText'>dyd1308@naver.com</p>
+              </div>
+              <div className='account'>
+                <h3 className='mainBottomRigthH3Text'>Blog</h3>
+                <a className='mainBottomRigthText' href="https://velog.io/@dyd1308">https://velog.io/@dyd1308</a>
+              </div>
+              <div className='account'>
+                <h3 className='mainBottomRigthH3Text'>Github</h3>
+                <a className='mainBottomRigthText' href="https://github.com/KimBeomGi">https://github.com/KimBeomGi</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

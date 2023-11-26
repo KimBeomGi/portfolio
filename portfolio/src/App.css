@@ -1,7 +1,8 @@
 .App {
   width: 100vw;
   min-height: 100vh;
-  background: #00069A;
+  /* background: #00069A; */
+  background: #080066;
 }
 .NavContainer {
   width: 100vw;
