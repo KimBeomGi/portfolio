@@ -85,9 +85,12 @@
 }
 
 .introRightBottom{
-
+  display: flex;
+  margin: auto;
 }
 .introRightBottomText{
   color: #ffffff;
   font-size: calc(15px + 1vmin);
+  margin: 0;
+  padding: 15px;
 }

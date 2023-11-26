@@ -21,11 +21,11 @@ function IntroductionComponent() {
             <div class='col-md-12'>
               <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 {/* 이미지 */}
-                <div class='col-md-3'>
+                <div class='col-3 col-md-3'>
                   <img className='introTopImage' src={portfolioMe2} alt="main logo"/>
                 </div>
                 {/* 주요가치관 */}
-                <div class='col-md-9'>
+                <div class='col-9 col-md-9'>
                   <h1 className='introTopText'>느리더라도 결승점에<br />도착하는 거북이</h1>
                 </div>
               </div>
@@ -34,11 +34,11 @@ function IntroductionComponent() {
             <div class='col-md-12'>
               <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 {/* 목표 */}
-                <div class='col-md-3'>
+                <div class='col-3 col-md-3'>
                   <h1 className='purpose'>목표</h1>
                 </div>
                 {/* 목표내용 */}
-                <div class='col-md-9'>
+                <div class='col-9 col-md-9'>
                   <p className='purposeText'>특전사 장교로서의 6년 생활로 다져진<br />책임감, 성실성, 소통능력을 기반으로<br />주어진 임무를 성공적으로 완수한다.</p>
                 </div>
               </div>

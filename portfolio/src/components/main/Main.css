@@ -86,9 +86,9 @@
 .mainBottomRigthText {
   color: #ffffff;
   text-decoration: none;
-  font-size: calc(15px + 1vmin);
+  font-size: calc(15px + 0.5vmin);
 }
 .account {
-  margin-top: calc(15px + 1vmin);
-  margin-bottom: calc(15px + 1vmin);
+  margin-top: calc(15px + 0.5vmin);
+  margin-bottom: calc(15px + 0.5vmin);
 }
