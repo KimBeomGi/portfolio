@@ -1,0 +1,206 @@
+.majorContainer {
+  width: 100%;
+  /* height: 100%; */
+  /* background: black; */
+}
+.subContainer {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  /* height: 95%; */
+  /* background-color: skyblue; */
+}
+.majorText {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: calc(60px + 2vmin);
+  margin-bottom: calc(30px + 1vmin);
+}
+.overMdDiv{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.overMdDivLeft{
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overMdDivMiddle{
+  width: 90%;
+}
+.overMdDivRight{
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleArrow{
+  width: 4.5vmin;
+  height: 4.5vmin;
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  width: 70%;
+  height: 70%;
+}
+
+.underMdDiv{
+  width: 100%;
+}
+.underMdDivTop{
+  
+}
+.underMdDivBottom{
+
+}
+
+/* ProjectContentComponent css */
+.projectMainContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background: #000; */
+}
+.projectSubContainer{
+  width: 100%;
+}
+.projectContainTopLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: yellow; */
+}
+.projectContainTopLeftTop{
+  margin-bottom: 3vmin;
+}
+.projectTitleText{
+  color: #ffffff;
+  font-size: calc(38px + 1vmin);
+}
+
+.projectContainTopLeftBottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.referenceUrlText{
+  color: #ffffff;
+  font-size: calc(15px + 1vmin);
+  margin-bottom: 1vmin;
+}
+.referenceUrl{
+  color: #ffffff;
+  font-style: italic;
+  font-size: calc(15px + 1vmin);
+  text-decoration: none;
+
+}
+
+.projectContainTopRight {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+}
+.projectImage{
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+  color: #ffffff;
+}
+.projectContainBottomLeft {
+  /* background: violet; */
+  margin-top: 10vmin
+}
+.divisionContain{
+  margin-bottom: 4vmin;
+}
+.projectContainTitle{
+  color: #ffffff;
+}
+.projectContainListText{
+  color: #ffffff;
+  font-size: calc(12px + 1vmin);
+}
+.projectContainBottomRight {
+  margin-top: 10vmin;
+  /* background: #000; */
+}
+.projectRunDiv{
+  border: 1px #ffffff solid;
+  margin-bottom: 3vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.projectRunTitle {
+  text-align: center;
+  border: 1px #ffffff solid;
+  color: #ffffff;
+  margin: 0;
+  padding: 1vmin;
+}
+.runImage{
+  /* border: 1px #ffffff solid; */
+  max-width: 100%;
+  object-fit: scale-down;
+  display: flex;
+}
+ul{
+  margin-left: 3vmin;
+}
+li{
+  margin-bottom: 1vmin;
+}
+
+
+/* 프로젝트 선택 페이지 */
+.IndividualProjectDiv{
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.IndividualProjectTitle{
+  text-align: center;
+  width: 25%;
+  color: #ffffff;
+
+}
+.IndividualProjectOutline{
+  width: 50%;
+  color: #ffffff;
+}
+.IndividualProjectDivImageContain{
+  text-align: center;
+  height: 100%;
+  width: 25%;
+}
+.IndividualProjectDivImage {
+  max-height: 100px;
+  object-fit: scale-down;
+}
+.pageButtonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pageButton {
+  font-size: 3vmin;
+  margin-left: 2vmin;
+  margin-right: 2vmin;
+}

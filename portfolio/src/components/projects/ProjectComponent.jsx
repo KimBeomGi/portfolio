@@ -1,25 +1,75 @@
 // import logo from './logo.svg';
-import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
-import { Outlet, Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import './Project.css'
+import ProjectContentComponent from './ProjectContentComponent'
+import { TfiArrowCircleLeft } from "react-icons/tfi";
+import { TfiArrowCircleRight } from "react-icons/tfi";
+import {handleProjectPageNum} from '../../redux/slices/main/mainSlice'
+import { useDispatch, useSelector } from 'react-redux';
+import projectData from '../../datas/projectData'
+
 
 function ProjectComponent() {
+  const dispatch = useDispatch()
+  const projectPageNum = useSelector((state) => state.mainSlice.projectPageNum)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [pjData, setPjData] = useState(projectData.project)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
-    <div>
-      <p>프로젝트</p>
-      <p>
-      <Link to="/introduction">소개</Link>
-      </p>
-      <p>
-      <Link to="/profile">약력</Link>
-      </p>
-      <p>
-      <Link to="/techstack">기술 스택</Link>
-      </p>
-      <p>
-      <Link to="/project">프로젝트</Link>
-      </p>
-      <Outlet />
+    <div className='majorContainer'>
+      {/* 메인 컴포넌트 전체 */}
+      <div className='subContainer'>
+          <div className='majorText'>프로젝트{projectPageNum}</div>
+          {
+            windowWidth  >= 768
+            ?
+            // 좌우에 넘어가기 버튼
+            <div className='overMdDiv'>
+              <div className='overMdDivLeft'>
+                {projectPageNum === 0
+                ? null
+                :
+                  <div className='circleArrow' onClick={()=>{dispatch(handleProjectPageNum(-1))}}>
+                    <TfiArrowCircleLeft size='100%' color='#ffffff'/>
+                  </div>
+                }
+              </div>
+              <div className='overMdDivMiddle'>
+                <ProjectContentComponent />
+              </div>
+              <div className='overMdDivRight'>
+                { pjData.length-1 <= projectPageNum
+                ? null
+                :
+                  <div className='circleArrow' onClick={()=>{dispatch(handleProjectPageNum(1))}}>
+                    <TfiArrowCircleRight size='100%' color='#ffffff'/>
+                  </div>
+                }
+                </div>
+            </div>
+            : 
+            // 하단에 넘어가기 버튼
+            <div className='underMdDiv'>
+              <div className='underMdDivTop'>
+                <ProjectContentComponent />
+              </div>
+              <div className='underMdDivBottom'>ㄴㄴㄴㄴㄴㄴ</div>
+            </div>
+          }
+          
+      </div>
     </div>
   );
 }

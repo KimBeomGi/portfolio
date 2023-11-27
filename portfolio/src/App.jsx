@@ -7,6 +7,7 @@ import IntroductionComponent from './components/introduction/IntroductionCompone
 import ProfileComponent from './components/profile/ProfileComponent';
 import ProjectComponent from './components/projects/ProjectComponent';
 import TechstackComponent from './components/techstacks/TechstackComponent';
+import ProjectSelectorComponent from './components/projects/ProjectSelectorComponent'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path='/introduction' element={<IntroductionComponent />} />
           <Route path='/profile' element={<ProfileComponent />} />
           <Route path='/techstack' element={<TechstackComponent />} />
-          <Route path='/project' element={<ProjectComponent />} />
+          {/* <Route path='/project' element={<ProjectComponent />} /> */}
+          <Route path='/project' element={<ProjectSelectorComponent />} />
         </Routes>
       </div>
     </div>

@@ -22,18 +22,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 /* .techstackVisible {
   display: flex;
   align-items: center;
 } */
 .techstackLogoImage {
+  min-width: 50px;
+  min-height: 50px;
+  width: 5vw;
+  height: 5vw;
   max-width: 100px;
   max-height: 100px;
   object-fit: scale-down;
 }
 .techstackName {
-  font-size: calc(20px + 2vmin);
+  font-size: calc(0px + 4.5vmin);
   margin-left: calc(20px + 2vmin);
   margin-right: calc(20px + 2vmin);
   color: #ffffff;
@@ -45,6 +50,7 @@
 }
 .techstackExplanationList {
   color: #ffffff;
+  font-size: calc(12px + 1vmin);
   padding-top: calc(1vmin);
   padding-bottom: calc(1vmin);
 

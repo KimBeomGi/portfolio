@@ -6,8 +6,8 @@ const TechstackData = {
       techstackName: "JavaScript",
       techstackScore: 3,
       techstackExplanation: [
-        "쓸 줄 안다.",
-        "그렇다."
+        "자바스크립트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "자바스크립트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
@@ -16,7 +16,9 @@ const TechstackData = {
       techstackName: "Vue",
       techstackScore: 2,
       techstackExplanation: [
-        "쓸 줄 안다.",
+        "뷰를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "뷰를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "뷰를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
@@ -24,7 +26,9 @@ const TechstackData = {
       techstackName: "React",
       techstackScore: 4,
       techstackExplanation: [
-        "쓸 줄 안다.",
+        "리액트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "리액트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "리액트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
@@ -33,7 +37,11 @@ const TechstackData = {
       techstackName: "React Native",
       techstackScore: 4,
       techstackExplanation: [
-        "쓸 줄 안다.",
+        "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
@@ -42,7 +50,9 @@ const TechstackData = {
       techstackName: "Python",
       techstackScore: 3,
       techstackExplanation: [
-        "쓸 줄 안다.",
+        "파이썬을 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "파이썬을 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "파이썬을 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
   ],
