@@ -1,7 +1,5 @@
 import React from 'react';
 import './Main.css'
-import portfolioMe1 from '../../image/mainImage/portfolioMe1.png';
-
 
 // import { useSelector, useDispatch } from 'react-redux'
 // import { Outlet, Link } from "react-router-dom";
@@ -19,13 +17,13 @@ function MainComponent() {
         <div class='col-md-8' style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
             <div className='mainTopLeft'>
               <div className='mainTopLeftSub'>
-                <h1 className='mainTopLeftText'>느리더라도 결승점에 도착하는 거북이🐢</h1>
+                <h1 className='mainTopLeftText'>어찌되었든 결승점에 도착하는 거북이🐢</h1>
                 <h1 className='mainTopLeftText'>김범기입니다.</h1>
               </div>
             </div>
           </div>
           <div class='col-md-4' style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <img className='mainTopRigthImage' src={portfolioMe1} alt="main logo"/>
+            <img className='mainTopRigthImage' src='/image/mainImage/portfolioMe1.png' alt="main logo"/>
           </div>
           <div class='col-md-8' style={{display:'flex', alignItems:'center'}}>
             <div className='mainBottomLeftSub'>

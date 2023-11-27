@@ -11,9 +11,12 @@ export const mainSlice = createSlice({
     handleProjectPageNum: (state, action) => {
       state.projectPageNum += action.payload
     },
+    handleChangeProjectPageNum: (state, action) => {
+      state.projectPageNum = action.payload
+    },
   },
 })
 
-export const { handleProjectPageNum } = mainSlice.actions
+export const { handleProjectPageNum, handleChangeProjectPageNum } = mainSlice.actions
 
 export default mainSlice.reducer

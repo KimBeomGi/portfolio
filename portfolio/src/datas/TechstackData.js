@@ -1,8 +1,7 @@
 const TechstackData = {
   techstack: [
     {
-      // techstackLogo: "../../image/techstackImage/javascriptLogo.png",
-      techstackLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png",
+      techstackLogo: "/image/techstackImage/javascriptLogo.png",
       techstackName: "JavaScript",
       techstackScore: 3,
       techstackExplanation: [
@@ -11,8 +10,16 @@ const TechstackData = {
       ]
     },
     {
-      // techstackLogo: "../../image/techstackImage/vueLogo.png",
-      techstackLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
+      techstackLogo: "/image/techstackImage/typescriptLogo.png",
+      techstackName: "TypeScript",
+      techstackScore: 1,
+      techstackExplanation: [
+        "타입스크립트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "타입스크립트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+      ]
+    },
+    {
+      techstackLogo: "/image/techstackImage/vueLogo.png",
       techstackName: "Vue",
       techstackScore: 2,
       techstackExplanation: [
@@ -22,9 +29,9 @@ const TechstackData = {
       ]
     },
     {
-      techstackLogo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      techstackLogo: "/image/techstackImage/reactLogo.png",
       techstackName: "React",
-      techstackScore: 4,
+      techstackScore: 3,
       techstackExplanation: [
         "리액트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
         "리액트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
@@ -32,10 +39,9 @@ const TechstackData = {
       ]
     },
     {
-      // techstackLogo: "../../image/techstackImage/reactNativeLogo.png",
-      techstackLogo: "https://velog.velcdn.com/images/imysh578/post/1f54af4b-6908-44fd-9072-3542ab10fe36/image.png",
+      techstackLogo: "/image/techstackImage/reactNativeLogo.png",
       techstackName: "React Native",
-      techstackScore: 4,
+      techstackScore: 3,
       techstackExplanation: [
         "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
         "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
@@ -45,8 +51,7 @@ const TechstackData = {
       ]
     },
     {
-      // techstackLogo: "../../image/techstackImage/pythonLogo.png",
-      techstackLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/172px-Python-logo-notext.svg.png",
+      techstackLogo: "/image/techstackImage/pythonLogo.png",
       techstackName: "Python",
       techstackScore: 3,
       techstackExplanation: [

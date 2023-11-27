@@ -25,18 +25,20 @@
 }
 .overMdDivLeft{
   width: 5%;
-  display: flex;
+  margin-top: 90px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .overMdDivMiddle{
   width: 90%;
 }
 .overMdDivRight{
   width: 5%;
-  display: flex;
+  margin-top: 90px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .circleArrow{
   width: 4.5vmin;
@@ -117,7 +119,7 @@
   /* background: red; */
 }
 .projectImage{
-  max-height: 80%;
+  max-height: 200px;
   max-width: 80%;
   object-fit: contain;
   color: #ffffff;
@@ -158,6 +160,7 @@
 .runImage{
   /* border: 1px #ffffff solid; */
   max-width: 100%;
+  max-height: 400px;
   object-fit: scale-down;
   display: flex;
 }
@@ -175,6 +178,16 @@ li{
   display: flex;
   align-items: center;
 }
+.topText{
+  margin: 0;
+  font-size: calc(15px + 1vmin) ;
+  font-weight: 500;
+}
+.IndividualProjectNumber{
+  text-align: center;
+  width: 5%;
+  color: #ffffff;
+}
 .IndividualProjectTitle{
   text-align: center;
   width: 25%;
@@ -182,17 +195,25 @@ li{
 
 }
 .IndividualProjectOutline{
-  width: 50%;
+  text-align: center;
+  width: 40%;
   color: #ffffff;
 }
 .IndividualProjectDivImageContain{
-  text-align: center;
+  color: #ffffff;
+  width: 30%; 
   height: 100%;
-  width: 25%;
+  text-align: center;
 }
 .IndividualProjectDivImage {
   max-height: 100px;
   object-fit: scale-down;
+}
+.IndividualHrTop{
+  border: 3px solid #ffffff;
+}
+.IndividualHr{
+  border: 1.5px #ffffff dashed;
 }
 .pageButtonDiv {
   display: flex;

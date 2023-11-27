@@ -21,8 +21,8 @@ function App() {
           <Route path='/introduction' element={<IntroductionComponent />} />
           <Route path='/profile' element={<ProfileComponent />} />
           <Route path='/techstack' element={<TechstackComponent />} />
-          {/* <Route path='/project' element={<ProjectComponent />} /> */}
-          <Route path='/project' element={<ProjectSelectorComponent />} />
+          <Route path='/project' element={<ProjectComponent />} />
+          <Route path='/projectSelect' element={<ProjectSelectorComponent />} />
         </Routes>
       </div>
     </div>

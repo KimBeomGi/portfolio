@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import React, { useState } from 'react';
 import './Profile.css'
-import portfolioMe3 from '../../image/profileImage/portfolioMe3.png'
 import profileData from '../../datas/profileData'
 
 function ProfileComponent() {
@@ -16,7 +15,7 @@ function ProfileComponent() {
             {/* 좌측 */}
             <div class='col-md-5' style={{padding:0}}>
               <div className='profileLeft'>
-                <img src={portfolioMe3} alt="약력이미지" className='profileImage'/>
+                <img src='/image/profileImage/portfolioMe3.png' alt="약력이미지" className='profileImage'/>
               </div>
             </div>
             {/* 우측 */}

@@ -16,7 +16,7 @@ function TechstackComponent() {
             <div>
               {techstacks.map((item) => {
                 return (
-                  <div>
+                  <div className='techstackIndividualContain'>
                     <div className='techstackVisible'>
                       <div class='row'>
                         <div class='col-md-2' style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>

@@ -3,11 +3,6 @@ import './Introduction.css'
 // import { Route, Routes } from 'react-router-dom';
 // import { Outlet, Link } from "react-router-dom";
 
-import portfolioMe2 from '../../image/introductionImage/portfolioMe2.jpg';
-import accountability from '../../image/introductionImage/accountability.png'
-import communication from '../../image/introductionImage/communication.png'
-import working from '../../image/introductionImage/working.png'
-
 function IntroductionComponent() {
   return (
     <div className='majorContainer'>
@@ -22,11 +17,12 @@ function IntroductionComponent() {
               <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 {/* 이미지 */}
                 <div class='col-3 col-md-3'>
-                  <img className='introTopImage' src={portfolioMe2} alt="main logo"/>
+                  <img className='introTopImage' src='/image/introductionImage/portfolioMe2.jpg' alt="main logo"/>
                 </div>
                 {/* 주요가치관 */}
                 <div class='col-9 col-md-9'>
-                  <h1 className='introTopText'>느리더라도 결승점에<br />도착하는 거북이</h1>
+                  <h1 className='introTopText'>어찌되었든 결승점에<br />도착하는 거북이</h1>
+                  <h1 className='introTopText'>김범기</h1>
                 </div>
               </div>
             </div>
@@ -54,19 +50,19 @@ function IntroductionComponent() {
             <div className='introRightMiddle'>
               <div className='imageBorder'>
                 <div className='imageBorderCircle'>
-                  <img src={working} alt="성실" className='valuesImage'/>
+                  <img src='/image/introductionImage/working.png' alt="성실" className='valuesImage'/>
                 </div>
                 <p className='imageBorderCircleText'>성실</p>
               </div>
               <div className='imageBorder'>
                 <div className='imageBorderCircle'>
-                  <img src={accountability} alt="책임" className='valuesImage'/>
+                  <img src='/image/introductionImage/accountability.png' alt="책임" className='valuesImage'/>
                 </div>
                 <p className='imageBorderCircleText'>책임</p>
               </div>
               <div className='imageBorder'>
                 <div className='imageBorderCircle'>
-                  <img src={communication} alt="소통" className='valuesImage'/>
+                  <img src='/image/introductionImage/communication.png' alt="소통" className='valuesImage'/>
                 </div>
                 <p className='imageBorderCircleText'>소통</p>
               </div>

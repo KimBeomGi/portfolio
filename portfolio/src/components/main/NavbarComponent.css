@@ -9,6 +9,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+}
+.headerLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerLogoLeft{
+  
+  width: 33%;
+}
+.headerLogoMiddle{
+  text-align: center;
+  width: 33%;
+}
+.kimbeomgiLogo{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.headerLogoRight{
+  text-align:end;
+  width: 33%;
 }
 .navbarContainer {
   width: 100%;

@@ -31,7 +31,7 @@ function ProjectComponent() {
     <div className='majorContainer'>
       {/* 메인 컴포넌트 전체 */}
       <div className='subContainer'>
-          <div className='majorText'>프로젝트{projectPageNum}</div>
+          <div className='majorText'>프로젝트</div>
           {
             windowWidth  >= 768
             ?

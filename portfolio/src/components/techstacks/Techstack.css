@@ -24,6 +24,9 @@
   align-items: center;
   justify-content: center;
 }
+.techstackIndividualContain{
+  margin-bottom: 5vmin;
+}
 /* .techstackVisible {
   display: flex;
   align-items: center;
