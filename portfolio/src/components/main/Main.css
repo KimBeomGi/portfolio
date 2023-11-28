@@ -39,7 +39,7 @@
   margin: auto;
   /* max-height: 30%; */
   /* width: auto; */
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   display: block;
 }
@@ -68,13 +68,17 @@
   align-items: center;
   justify-content: center;
 }
+.mainBottomLeftSubUl{
+  margin-bottom: 0;
+}
 /* .mainBottomLeftList {
   display: flex;
 } */
 .mainBottomLeftListText {
   color: #ffffff;
   font-size: calc(15px + 1vmin);
-  padding: calc(0.8vmin);
+  padding: calc(1.5vmin);
+  margin: 0;
 }
 .mainBottomRigth {
   width: 50%;
@@ -85,6 +89,7 @@
 }
 .mainBottomRigthText {
   color: #ffffff;
+  transition: color 1s ease-in-out;
   text-decoration: none;
   font-size: calc(15px + 0.5vmin);
 }

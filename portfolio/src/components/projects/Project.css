@@ -177,6 +177,7 @@ li{
   max-height: 100px;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 .topText{
   margin: 0;
@@ -184,17 +185,20 @@ li{
   font-weight: 500;
 }
 .IndividualProjectNumber{
+  font-size: calc(12px + 1vmin) ;
   text-align: center;
   width: 5%;
   color: #ffffff;
 }
 .IndividualProjectTitle{
+  font-size: calc(13px + 1vmin) ;
   text-align: center;
   width: 25%;
   color: #ffffff;
 
 }
 .IndividualProjectOutline{
+  font-size: calc(13px + 1vmin) ;
   text-align: center;
   width: 40%;
   color: #ffffff;

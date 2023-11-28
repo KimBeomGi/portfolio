@@ -24,6 +24,12 @@
   align-items: center;
   justify-content: center;
 }
+.techStackTitle{
+  color: #ffffff;
+  font-size: 5vmin;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+}
 .techstackIndividualContain{
   margin-bottom: 5vmin;
 }
@@ -44,6 +50,7 @@
   font-size: calc(0px + 4.5vmin);
   margin-left: calc(20px + 2vmin);
   margin-right: calc(20px + 2vmin);
+  margin-bottom: 0;
   color: #ffffff;
 }
 .techstackExplanationUl {
@@ -61,4 +68,22 @@
 .scoreBox{
  display: flex;
  align-items: center;
+}
+.divisionTechStack{
+  border: 2px solid #ffffff;
+}
+.techStackTitleCollaborate{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.techStackTitleCollaborateContain{
+  margin: 3vmin;
+}
+.techstackLogoName{
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
 }
