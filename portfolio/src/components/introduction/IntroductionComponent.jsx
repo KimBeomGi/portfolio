@@ -2,13 +2,19 @@ import React from 'react';
 import './Introduction.css'
 // import { Route, Routes } from 'react-router-dom';
 // import { Outlet, Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import {handleNavPageName} from '../../redux/slices/main/mainSlice'
 
 function IntroductionComponent() {
+  const dispatch = useDispatch()
+  dispatch(handleNavPageName('introduction'))
+
   return (
     <div className='majorContainer'>
       {/* 메인 컴포넌트 전체 */}
       <div className='subContainer'>
-        <div className='majorText'>소개</div>
+        {/* <div className='majorText'>소개</div> */}
+        <div className='introductionMajorText'>결승점에 도착하는 거북이의 의지</div>
         <div class='row'>
           {/* 좌측 */}
           <div class='col-md-6' style={{display:'flex',  flexDirection:'column', justifyContent:'space-evenly'}}>
@@ -21,8 +27,8 @@ function IntroductionComponent() {
                 </div>
                 {/* 주요가치관 */}
                 <div class='col-9 col-md-9'>
-                  <h1 className='introTopText'>어찌되었든 결승점에<br />도착하는 거북이</h1>
-                  <h1 className='introTopText'>김범기</h1>
+                  <h1 className='introTopText'>결승점에<br />도달하는</h1>
+                  <h1 className='introTopText'>김범기입니다.</h1>
                 </div>
               </div>
             </div>

@@ -15,7 +15,6 @@ const TechstackData = {
       techstackScore: 1,
       techstackExplanation: [
         "공식문서와 검색을 통해 JavaScript를 이용할 수 있다.",
-        "자바스크립트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
@@ -38,18 +37,16 @@ const TechstackData = {
       techstackExplanation: [
         "공식문서와 검색을 통해 Django를 이용할 수 있다.",
         "DRF를 이용해 API를 생성할 수 있다.",
-        "장고를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
       techstackLogo: "/image/techstackImage/vueLogo.png",
       techstackName: "Vue",
-      techstackScore: 2,
+      techstackScore: 1,
       techstackExplanation: [
         "공식문서와 검색을 통해 Vue를 이용할 수 있다.",
         "Vue2 와 Vue3를 사용가능하다.",
         "Vue의 외부 라이브러리를 이용할 수 있다.",
-        "뷰를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
       ]
     },
     {
@@ -59,7 +56,7 @@ const TechstackData = {
       techstackExplanation: [
         "공식문서와 검색을 통해 React를 이용할 수 있다.",
         "React의 외부 라이브러리를 이용할 수 있다.",
-        "리액트를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "React를 이용하기 위한 초기 세팅을 할 수 있다."
       ]
     },
     {
@@ -70,7 +67,7 @@ const TechstackData = {
         "공식문서와 검색을 통해 React Native를 이용할 수 있다.",
         "React Native의 외부 라이브러리를 이용할 수 있다.",
         "Expo Go와 CLI를 이용한 2가지 방법 모두 초기 세팅 및 사용할 수 있다. ",
-        "리액트네이티브를 쓸줄알고 또 쓸줄알고 쓸줄안다.",
+        "간단한 애니메이션 기능을 적용할 수 있다.",
       ]
     },
   ],

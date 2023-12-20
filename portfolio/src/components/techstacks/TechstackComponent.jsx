@@ -3,8 +3,12 @@ import React, { useState } from 'react';
 import './Techstack.css'
 import TechstackData from '../../datas/TechstackData'
 // import { Route, Routes } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import {handleNavPageName} from '../../redux/slices/main/mainSlice'
 
 function TechstackComponent() {
+  const dispatch = useDispatch()
+  dispatch(handleNavPageName('techstack'))
   const [techLanguage, setTechLanguage] = useState(TechstackData.techLanguage)
   const [techLibrary, setTechLibrary] = useState(TechstackData.techLibrary)
   const [techCollaborateTool, setTechCollaborateTool] = useState(TechstackData.techCollaborateTool)
@@ -13,7 +17,7 @@ function TechstackComponent() {
     <div className='majorContainer'>
         {/* 메인 컴포넌트 전체 */}
       <div className='subContainer'>
-        <div className='majorText'>기술 스택</div>
+        {/* <div className='majorText'>기술 스택</div> */}
           <div className='contain'>
             <div>
               <div className='techStackTitle'>사용 가능한 언어</div>

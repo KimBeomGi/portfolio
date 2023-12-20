@@ -2,8 +2,14 @@ import React from 'react';
 import './NavbarComponent.css';
 import {Link } from "react-router-dom";
 import { GoHome } from "react-icons/go";
+import { useDispatch, useSelector } from 'react-redux';
+import {handleNavPageName} from '../../redux/slices/main/mainSlice'
+
+
 
 function NavbarComponent() {
+  const navPageName = useSelector((state) => state.mainSlice.navPageName)
+  const dispatch = useDispatch()
 
   return (
     <div className='NavbarComponent'>
@@ -24,16 +30,16 @@ function NavbarComponent() {
       <div className='navbarContainer'>
         <div className='navbar'>
           <span className='navbarDivsion'>
-            <Link className='navbarMenu' to="/introduction">소개</Link>
+            <Link className='navbarMenu' onClick={() => {dispatch(handleNavPageName('introduction'))}} style={{color: navPageName ==='introduction'? 'red' :'#000000'}} to="/introduction">소개</Link>
           </span>
           <span className='navbarDivsion'>
-            <Link className='navbarMenu' to="/profile">약력</Link>
+            <Link className='navbarMenu' onClick={() => {dispatch(handleNavPageName('techstack'))}} style={{color: navPageName ==='techstack'? 'red' :'#000000'}} to="/techstack">기술 스택</Link>
           </span>
           <span className='navbarDivsion'>
-            <Link className='navbarMenu' to="/techstack">기술 스택</Link>
+            <Link className='navbarMenu' onClick={() => {dispatch(handleNavPageName('projectSelect'))}} style={{color: navPageName ==='projectSelect'? 'red' :'#000000'}} to="/projectSelect">프로젝트</Link>
           </span>
           <span className='navbarDivsion'>
-            <Link className='navbarMenu' to="/projectSelect">프로젝트</Link>
+            <Link className='navbarMenu' onClick={() => {dispatch(handleNavPageName('profile'))}} style={{color: navPageName ==='profile'? 'red' :'#000000'}} to="/profile">약력</Link>
           </span>
         </div>
       </div>

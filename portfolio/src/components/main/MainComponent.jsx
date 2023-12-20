@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css'
+import { useDispatch, useSelector } from 'react-redux';
+import {handleNavPageName} from '../../redux/slices/main/mainSlice'
 
 // import { useSelector, useDispatch } from 'react-redux'
 // import { Outlet, Link } from "react-router-dom";
@@ -8,6 +10,8 @@ import './Main.css'
 function MainComponent() {
   // const count = useSelector((state) => state.mainSlice.value)
   // const dispatch = useDispatch()
+  const dispatch = useDispatch()
+  dispatch(handleNavPageName('home'))
   const [textColor, setTextColor] = useState('#FFFFFF');
   const [overMouse, setOverMouse] = useState(false)
   // const [rgbValue, setRgbValue] = useState({redValue:128, greenValue:128, blueValue:128})
@@ -70,7 +74,7 @@ function MainComponent() {
               <ul className='mainBottomLeftSubUl'>
                 <li className='mainBottomLeftListText'>안되면 되게하라!의 신념으로 일하는 개발자 김범기입니다.</li>
                 <li className='mainBottomLeftListText'>수치화와 분석을 통해 최적의 성과를 추구합니다.</li>
-                <li className='mainBottomLeftListText'>작업 전, 계획과 설계로 효율적인 코드를 준비합니다.</li>
+                <li className='mainBottomLeftListText'>계획과 설계로 효율적인 코드를 준비, 실천합니다.</li>
                 <li className='mainBottomLeftListText'>React와 React Native를 이용할 줄 아는 프론트엔드 개발자입니다.</li>
                 <li className='mainBottomLeftListText'>특전사 중대장 경험으로 협력의 가치를 인지하고 실천하는 개발자입니다.</li>
               </ul>

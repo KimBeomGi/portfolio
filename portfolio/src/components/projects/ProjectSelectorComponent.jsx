@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import projectData from '../../datas/projectData';
 import {Link } from "react-router-dom";
 import {handleChangeProjectPageNum} from '../../redux/slices/main/mainSlice'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import {handleNavPageName} from '../../redux/slices/main/mainSlice'
 
 function ProjectSelectorComponent() {
   const dispatch = useDispatch()
+  dispatch(handleNavPageName('projectSelect'))
   const [pjData] = useState(projectData.project);
   const [allPage, setAllPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,7 +43,7 @@ function ProjectSelectorComponent() {
     <div className='majorContainer'>
       <div className='subContainer'>
         {/* 상단 */}
-        <div className='majorText'>프로젝트</div>
+        {/* <div className='majorText'>프로젝트</div> */}
         {/* 중단 */}
         {/* 게시글 목록 */}
         <div>

@@ -2,10 +2,13 @@
 import React, { useEffect, useState } from 'react';
 import './Project.css'
 import projectData from '../../datas/projectData'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import {handleNavPageName} from '../../redux/slices/main/mainSlice'
 
 
 function ProjectContentComponent() {
+  const dispatch = useDispatch()
+  dispatch(handleNavPageName('projectSelect'))
   const projectPageNum = useSelector((state) => state.mainSlice.projectPageNum)
   // const [selectProject, setSelectProject] = useState(projectData.project)
   const [selectProject, setSelectProject] = useState(projectData.project[projectPageNum])

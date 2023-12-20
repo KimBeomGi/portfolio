@@ -22,10 +22,11 @@ const profileData = {
     },
   ],
   award: [
-    // {
-    //   winningDate: '2023.12.01',
-    //   winningName: '어디어디 무슨상'
-    // },
+    {
+      winningDate: '2023.11.24',
+      winningName: '자율 프로젝트 우수상',
+      winningSupervision: '삼성 청년 SW 아카데미',
+    },
   ],
   certification: [
     {

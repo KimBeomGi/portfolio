@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  projectPageNum: 0
+  projectPageNum: 0,
+  navPageName: 'home',
 }
 
 export const mainSlice = createSlice({
@@ -14,9 +15,12 @@ export const mainSlice = createSlice({
     handleChangeProjectPageNum: (state, action) => {
       state.projectPageNum = action.payload
     },
+    handleNavPageName: (state, action) => {
+      state.navPageName = action.payload
+    }
   },
 })
 
-export const { handleProjectPageNum, handleChangeProjectPageNum } = mainSlice.actions
+export const { handleProjectPageNum, handleChangeProjectPageNum, handleNavPageName } = mainSlice.actions
 
 export default mainSlice.reducer

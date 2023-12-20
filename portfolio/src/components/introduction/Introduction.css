@@ -18,6 +18,13 @@
   font-size: calc(60px + 2vmin);
   margin-bottom: calc(30px + 1vmin);
 }
+.introductionMajorText {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: calc(40px + 2vmin);
+  margin-bottom: calc(30px + 1vmin);
+}
 .introTopImage {
   /* height: 200px; */
   /* width: 200px; */
